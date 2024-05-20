@@ -1,0 +1,44 @@
+<div class="grid-container">
+  <div class="section">
+    <h2>Dawoo</h2>
+  </div>
+  <div class="section">
+    <h2>Selected Puzzle</h2>
+  </div>
+  <div class="section">
+    <h2>Puzzle Image</h2>
+  </div>
+  <div class="section">
+    <h2>5/20/2024</h2>
+  </div>
+</div>
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.section {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+<div class="flex-container">
+  <div class="flex-item"><img src="image/piece1.jpg" alt="Piece 1"></div>
+  <div class="flex-item"><img src="image/piece2.jpg" alt="Piece 2"></div>
+  <!-- Add more flex items for each puzzle piece -->
+  <div class="flex-item"><img src="image/faulty_piece.jpg" alt="Faulty Piece" style="display: none;"></div>
+</div>
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  width: 100px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  margin: 5px;
+}
