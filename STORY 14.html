@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Image Transformation</title>
+    <style>
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .image-item {
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+        }
+
+        .image-item img:hover {
+            filter: none;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div class="image-item">
+            <img src="dinosaur.png" alt="Image 1">
+        </div>
+        <div class="image-item">
+            <img src="butterfly.jpg" alt="Image 2">
+        </div>
+        <div class="image-item">
+            <img src="football_field.jpg" alt="Image 3">
+        </div>
+        <div class="image-item">
+            <img src="penguins.jpg" alt="Image 4">
+        </div>
+        <div class="image-item">
+            <img src="seagull.png" alt="Image 5">
+        </div>
+        <div class="image-item">
+            <img src="theater_stage.jpg" alt="Image 6">
+        </div>
+    </div>
+</body>
+</html>
